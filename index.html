@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="mr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurva's Classes | Coaching Institute in Ratnagiri</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins (headings) & Mukta (Marathi/Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandMaroon: '#7A1F1F',
+                        brandOrange: '#E8622C',
+                        brandBlack: '#1D1B1E',
+                        brandGray: '#F5F3F0',
+                        brandBg: '#FDFCFB',
+                    },
+                    fontFamily: {
+                        sans: ['Mukta', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Mukta', 'sans-serif';
+            background-color: #FDFCFB;
+            color: #1D1B1E;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', 'sans-serif';
+        }
+    </style>
+</head>
+<body class="bg-[#FDFCFB] text-[#1D1B1E] leading-relaxed overflow-x-hidden">
+
+    <!-- ADMISSIONS OPEN TOP BANNER -->
+    <div class="bg-brandOrange text-white text-center py-2 px-4 text-sm font-semibold tracking-wider relative z-50 animate-pulse">
+        <span class="inline-block mr-2">📢</span>
+        <span>Admissions Open for Batch 2026-2027! Class 9th & 10th (Semi-English & Marathi Medium)</span>
+        <a href="#enroll" class="underline ml-2 hover:text-yellow-200 transition">आताच नोंदणी करा! <i class="fa-solid fa-arrow-right text-xs"></i></a>
+    </div>
+
+    <!-- MAIN HEADER / NAVIGATION -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo & Name -->
+                <div class="flex items-center space-x-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brandMaroon rounded-xl flex items-center justify-center shadow-md shadow-brandMaroon/25 transition-transform hover:scale-105">
+                            <span class="text-brandOrange text-xl"><i class="fa-solid fa-pen-nib"></i></span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-xl font-extrabold tracking-tight text-brandBlack leading-none">APURVA'S <span class="text-brandOrange">CLASSES</span></span>
+                            <span class="text-[10px] text-slate-500 uppercase tracking-widest font-bold mt-0.5">Ratnagiri • SSC Specialist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex space-x-6 text-sm font-semibold uppercase tracking-wider text-gray-700">
+                    <a href="#home" class="hover:text-brandOrange transition">Home</a>
+                    <a href="#about" class="hover:text-brandOrange transition">About Us</a>
+                    <a href="#courses" class="hover:text-brandOrange transition">Courses</a>
+                    <a href="#features" class="hover:text-brandOrange transition">Features</a>
+                    <a href="#results" class="hover:text-brandOrange transition">Results</a>
+                    <a href="#gallery" class="hover:text-brandOrange transition">Gallery</a>
+                    <a href="#timetable" class="hover:text-brandOrange transition">Timetable</a>
+                    <a href="#fees" class="hover:text-brandOrange transition">Fees</a>
+                    <a href="#contact" class="hover:text-brandOrange transition">Contact</a>
+                </nav>
+
+                <!-- Desktop Actions -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="tel:9067257872" class="flex items-center text-sm font-bold text-brandMaroon hover:text-brandOrange transition">
+                        <i class="fa-solid fa-phone mr-2"></i> 9067257872
+                    </a>
+                    <a href="https://wa.me/8329931123" target="_blank" class="bg-emerald-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-emerald-700 transition flex items-center shadow-md">
+                        <i class="fa-brands fa-whatsapp mr-2 text-lg"></i> Chat
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 focus:outline-none hover:text-brandOrange">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3 text-center">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-100 hover:text-brandOrange">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-100 hover:text-brandOrange">About Us</a>
+                <a href="#courses" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-100 hover:text-brandOrange">Courses</a>
+                <a href="#features" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-100 hover:text-brandOrange">Features</a>
+                <a href="#results" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-100 hover:text-brandOrange">Results</a>
+                <a href="#gallery" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-100 hover:text-brandOrange">Gallery</a>
+                <a href="#timetable" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-100 hover:text-brandOrange">Timetable</a>
+                <a href="#fees" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-100 hover:text-brandOrange">Fees</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-100 hover:text-brandOrange">Contact</a>
+                <div class="pt-4 flex flex-col items-center space-y-3">
+                    <a href="tel:9067257872" class="flex items-center font-bold text-brandMaroon hover:text-brandOrange transition">
+                        <i class="fa-solid fa-phone mr-2"></i> 9067257872
+                    </a>
+                    <a href="https://wa.me/8329931123" target="_blank" class="w-11/12 bg-emerald-600 text-white py-2 rounded-full font-semibold hover:bg-emerald-700 transition flex items-center justify-center shadow-md">
+                        <i class="fa-brands fa-whatsapp mr-2 text-lg"></i> WhatsApp Chat
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HOME PAGE HERO BANNER -->
+    <section id="home" class="relative bg-brandBlack text-white py-20 lg:py-32 overflow-hidden">
+        <!-- Background Pattern Decorators -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#7A1F1F_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-brandMaroon rounded-full filter blur-3xl opacity-30"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-brandOrange rounded-full filter blur-3xl opacity-20"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Column: Taglines & Actions -->
+                <div class="space-y-6 text-center lg:text-left">
+                    <span class="inline-block bg-brandMaroon text-white text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full border border-brandOrange">
+                        🏆 रत्नागिरीतील सर्वोत्तम क्लास
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                        <span class="text-brandOrange">Apurva's</span> Classes
+                    </h1>
+                    <p class="text-xl sm:text-2xl font-bold text-gray-200">
+                        यशाचा मार्ग, संस्कारांची जोड! <br>
+                        <span class="text-brandOrange font-semibold text-lg sm:text-xl">Your Path to Excellence and Strong Character!</span>
+                    </p>
+                    <p class="text-gray-300 text-base max-w-lg mx-auto lg:mx-0">
+                        इयत्ता ९ वी व १० वी च्या विद्यार्थ्यांसाठी शास्त्र (Science), गणित (Maths) आणि संस्कृत (Sanskrit) विषयांचे उत्कृष्ट मार्गदर्शन. सेमी-इंग्रजी व मराठी माध्यम बॅचेस.
+                    </p>
+                    
+                    <!-- Call To Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="tel:9067257872" class="w-full sm:w-auto bg-brandMaroon text-white px-8 py-3.5 rounded-2xl font-bold hover:bg-red-950 active:scale-95 transition-all duration-200 flex items-center justify-center shadow-lg shadow-brandMaroon/40 border border-brandMaroon/20 hover:border-brandOrange">
+                            <i class="fa-solid fa-phone mr-2.5 text-lg"></i> Call Now: 9067257872
+                        </a>
+                        <a href="https://wa.me/8329931123" target="_blank" class="w-full sm:w-auto bg-emerald-600 text-white px-8 py-3.5 rounded-2xl font-bold hover:bg-emerald-700 active:scale-95 transition-all duration-200 flex items-center justify-center shadow-lg shadow-emerald-600/35">
+                            <i class="fa-brands fa-whatsapp mr-2.5 text-xl"></i> WhatsApp Us
+                        </a>
+                        <a id="enroll" href="https://forms.gle/placeholder-link" target="_blank" class="w-full sm:w-auto bg-brandOrange text-white px-8 py-3.5 rounded-2xl font-bold hover:bg-orange-600 active:scale-95 transition-all duration-200 flex items-center justify-center shadow-lg shadow-brandOrange/40">
+                            <i class="fa-solid fa-graduation-cap mr-2.5 text-lg"></i> Enroll Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Student Group Photo & Visual Highlight -->
+                <div class="relative">
+                    <!-- Photo Border Highlight Box -->
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brandMaroon to-brandOrange rounded-2xl transform rotate-3 scale-105 opacity-20"></div>
+                    <div class="relative bg-zinc-900 border-4 border-brandMaroon rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] flex flex-col justify-between p-6">
+                        <!-- Placeholder Marker -->
+                        <!-- PLACEHOLDER_START: HERO_STUDENTS_GROUP_PHOTO -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-zinc-800 p-8 text-center">
+                            <i class="fa-solid fa-users text-brandOrange text-6xl mb-4"></i>
+                            <p class="text-xl font-bold text-white uppercase tracking-wider">Students' Group Photo & Event Banner</p>
+                            <p class="text-sm text-gray-400 mt-2 max-w-sm">Placeholder for class group photo, top achievers celebration, or seminar banner. Upload photo inside app/src/main/res/drawable/.</p>
+                            <span class="mt-4 bg-brandMaroon text-white text-xs px-3 py-1.5 rounded-full border border-gray-600 uppercase tracking-widest font-mono">ic_group_photo_placeholder.jpg</span>
+                        </div>
+                        <!-- PLACEHOLDER_END: HERO_STUDENTS_GROUP_PHOTO -->
+                        
+                        <!-- Floating Achievement Badges overlayed on photo -->
+                        <div class="absolute top-4 right-4 bg-brandOrange text-white px-3 py-1.5 rounded-lg text-xs font-black uppercase tracking-wider shadow-lg z-20">
+                            ⭐ Established Brand
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-brandMaroon text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg z-20">
+                            📍 Sonal Apartment, Gaditali, Ratnagiri
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT US -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandOrange font-bold tracking-widest uppercase text-sm">आमच्याबद्दल | ABOUT US</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBlack mt-2">Apurva's Classes - Shaping Bright Futures</h2>
+                <div class="w-24 h-1 bg-brandMaroon mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <!-- Left: Introductions -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-brandMaroon">A Legacy of Quality Education in Ratnagiri</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        <strong>Apurva's Classes</strong> हे रत्नागिरीतील एक अग्रगण्य शैक्षणिक व्यासपीठ असून, जिथे इयत्ता ९ वी व १० वी च्या विद्यार्थ्यांना मूलभूत संकल्पनांपासून ते परीक्षेतील सर्वोच्च गुणांपर्यंत यशस्वी मार्गदर्शन केले जाते. आमचा भर केवळ घोकंपट्टीवर नसून विद्यार्थ्यांचे आकलन सामर्थ्य वाढवणे आणि त्यांच्यात अभ्यासाची गोडी निर्माण करणे यावर आहे.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        We pride ourselves on offering systematic coaching led directly by established, passionate instructors who understand student pain points. Through persistent mentoring, regular assessment, and individual emphasis, we empower every student to excel.
+                    </p>
+                    
+                    <div class="p-4 bg-orange-50 border-l-4 border-brandOrange rounded-r-xl">
+                        <p class="italic text-gray-800 font-medium">
+                            "आमचे ध्येय प्रत्येक विद्यार्थ्याला स्पर्धात्मक जगात आत्मविश्वासाने उभे करणे आहे."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right: Founder Introduction & Photo Placeholder -->
+                <div class="relative bg-white border border-slate-100 rounded-3xl p-6 shadow-lg shadow-brandMaroon/5">
+                    <!-- PLACEHOLDER_START: FOUNDER_PHOTO -->
+                    <div class="w-32 h-32 bg-slate-100 rounded-full mx-auto mb-6 flex items-center justify-center border-4 border-brandMaroon overflow-hidden shadow-inner">
+                        <i class="fa-solid fa-user-tie text-brandMaroon text-4xl"></i>
+                    </div>
+                    <!-- PLACEHOLDER_END: FOUNDER_PHOTO -->
+                    <h4 class="text-xl font-extrabold text-brandBlack text-center tracking-tight">Apurva Classes Founder & Director</h4>
+                    <p class="text-sm text-brandOrange font-bold text-center mb-4 uppercase tracking-wider">Established Faculty with Years of Academic Excellence</p>
+                    <p class="text-gray-500 text-center text-sm leading-relaxed max-w-md mx-auto">
+                        Experienced educator focused on simplified teaching methods for Science, Mathematics, and Sanskrit. Driven by a vision to make complex concepts fully comprehensible to vernacular and semi-english medium students.
+                    </p>
+                    <div class="mt-6 flex flex-wrap justify-center gap-2">
+                        <span class="bg-brandMaroon/5 text-brandMaroon text-xs px-3 py-1 rounded-full font-bold border border-brandMaroon/10">Science Expert</span>
+                        <span class="bg-brandOrange/5 text-brandOrange text-xs px-3 py-1 rounded-full font-bold border border-brandOrange/10">Maths Mentor</span>
+                        <span class="bg-brandBlack/5 text-brandBlack text-xs px-3 py-1 rounded-full font-bold border border-brandBlack/10">Sanskrit Scholar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision, Mission & Why Choose Us -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
+                <!-- Vision -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 border-t-4 border-t-brandMaroon shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-12 h-12 bg-brandMaroon/10 rounded-xl flex items-center justify-center text-brandMaroon text-xl mb-5">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h4 class="text-lg font-extrabold text-brandBlack mb-2 tracking-tight">Vision (ध्येय)</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        रत्नागिरीतील प्रत्येक विद्यार्थ्यात विज्ञानाची जिज्ञासा, गणिताची सुलभता आणि संस्कृत भाषेचे आत्मभान जागृत करणे आणि त्यांना उत्तम नागरिक बनवणे.
+                    </p>
+                </div>
+
+                <!-- Mission -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 border-t-4 border-t-brandOrange shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-12 h-12 bg-brandOrange/10 rounded-xl flex items-center justify-center text-brandOrange text-xl mb-5">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h4 class="text-lg font-extrabold text-brandBlack mb-2 tracking-tight">Mission (उद्दिष्ट्य)</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        अद्ययावत अध्यापन पद्धती, नियमित सराव परीक्षा, आणि वैयक्तिक लक्ष याद्वारे प्रत्येक विद्यार्थ्याला ९ वी व १० वी बोर्ड परीक्षेत दैदीप्यमान यश मिळवून देणे.
+                    </p>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 border-t-4 border-t-brandBlack shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-12 h-12 bg-brandBlack/10 rounded-xl flex items-center justify-center text-brandBlack text-xl mb-5">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <h4 class="text-lg font-extrabold text-brandBlack mb-2 tracking-tight">Why Us? (आमची वैशिष्ट्ये)</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        संस्थापक-नेतृत्वात मार्गदर्शन, वैयक्तिक शंका निरसन सत्र, मर्यादित बॅच साईझ आणि पटवर्धन हायस्कूलच्या विद्यार्थ्यांसाठी स्वतंत्र व विशेष बॅचेसची सोय.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: COURSES -->
+    <section id="courses" class="py-20 bg-brandGray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandOrange font-bold tracking-widest uppercase text-sm">कोर्सेस | COURSES OFFERED</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBlack mt-2">Comprehensive Batches Tailored for Board Exams</h2>
+                <div class="w-24 h-1 bg-brandMaroon mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Course Card 1: SSC Class 10th (Semi-English) -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="bg-brandMaroon text-white p-6">
+                            <span class="bg-brandOrange text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Top Seller</span>
+                            <h3 class="text-2xl font-bold mt-3">SSC इयत्ता १० वी</h3>
+                            <p class="text-sm opacity-95">सेमी-इंग्रजी व मराठी माध्यम</p>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-gray-600 text-sm">बोर्ड परीक्षेसाठी विशेष तयारी! अत्यंत सोप्या भाषेत गणित, विज्ञान आणि संस्कृतचे परिपूर्ण मार्गदर्शन.</p>
+                            <ul class="space-y-2 text-sm text-gray-700 font-medium">
+                                <li class="flex items-center"><i class="fa-solid fa-square-check text-brandOrange mr-2"></i> Mathematics (बीजगणित व भूमिती)</li>
+                                <li class="flex items-center"><i class="fa-solid fa-square-check text-brandOrange mr-2"></i> Science (भाग १ आणि २)</li>
+                                <li class="flex items-center"><i class="fa-solid fa-square-check text-brandOrange mr-2"></i> Sanskrit (संस्कृत संपूर्ण/अर्ध)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 border-t border-gray-100">
+                        <a href="#enroll" class="block w-full text-center bg-brandMaroon text-white py-2 rounded-xl font-bold hover:bg-brandOrange transition">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course Card 2: SSC Class 9th -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="bg-brandOrange text-white p-6">
+                            <span class="bg-brandMaroon text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Foundation Stage</span>
+                            <h3 class="text-2xl font-bold mt-3">SSC इयत्ता ९ वी</h3>
+                            <p class="text-sm opacity-95">सेमी-इंग्रजी व मराठी माध्यम</p>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-gray-600 text-sm">१० वी बोर्डाचा पाया मजबूत करण्यासाठी उत्कृष्ट मार्गदर्शन वर्ग. बेसिक संकल्पनांचे सखोल स्पष्टीकरण.</p>
+                            <ul class="space-y-2 text-sm text-gray-700 font-medium">
+                                <li class="flex items-center"><i class="fa-solid fa-square-check text-brandMaroon mr-2"></i> पायाभूत गणित व सराव</li>
+                                <li class="flex items-center"><i class="fa-solid fa-square-check text-brandMaroon mr-2"></i> मूलभूत विज्ञानाचा सखोल अभ्यास</li>
+                                <li class="flex items-center"><i class="fa-solid fa-square-check text-brandMaroon mr-2"></i> संस्कृत व्याकरण व वाचन सुधारणा</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 border-t border-gray-100">
+                        <a href="#enroll" class="block w-full text-center bg-brandOrange text-white py-2 rounded-xl font-bold hover:bg-orange-600 transition">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course Card 3: Patwardhan High School Special Batch -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="bg-brandBlack text-white p-6">
+                            <span class="bg-brandOrange text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">Exclusive Batch</span>
+                            <h3 class="text-2xl font-bold mt-3">पटवर्धन हायस्कूल स्पेशल बॅच</h3>
+                            <p class="text-sm opacity-95">Patwardhan High School Focus</p>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-gray-600 text-sm">पटवर्धन हायस्कूलच्या विद्यार्थ्यांसाठी स्वतंत्र वेळेत विशेष बॅच. शालेय वेळापत्रक आणि अभ्यासक्रमाला सुसंगत नियोजन.</p>
+                            <ul class="space-y-2 text-sm text-gray-700 font-medium">
+                                <li class="flex items-center"><i class="fa-solid fa-square-check text-brandOrange mr-2"></i> शालेय परीक्षांच्या दृष्टीने टेस्ट सिरीज</li>
+                                <li class="flex items-center"><i class="fa-solid fa-square-check text-brandOrange mr-2"></i> शाळेच्या वेळापत्रकाला अनुरुप बॅच टायमिंग्स</li>
+                                <li class="flex items-center"><i class="fa-solid fa-square-check text-brandOrange mr-2"></i> विशेष शंका निरसन सत्र (Doubt Solving)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 border-t border-gray-100">
+                        <a href="#enroll" class="block w-full text-center bg-brandBlack text-white py-2 rounded-xl font-bold hover:bg-brandOrange transition">Enroll Now</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Placeholder Notification for future courses -->
+            <div class="mt-12 bg-orange-50 border border-orange-200 rounded-xl p-6 text-center max-w-2xl mx-auto">
+                <p class="text-sm text-brandOrange font-bold uppercase tracking-wide">✨ नवीन बॅचेस लवकरच येत आहेत! | Future Course Placeholder</p>
+                <!-- PLACEHOLDER_START: FOUNDATION_BATCH_INFO -->
+                <p class="text-gray-600 text-xs mt-1">इयत्ता ८ वी व स्कॉलरशिप परीक्षांसाठी फाउंडेशन बॅचचे (Foundation Batch) नियोजन लवकरच जाहीर करण्यात येईल.</p>
+                <!-- PLACEHOLDER_END: FOUNDATION_BATCH_INFO -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: FEATURES SECTION -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandOrange font-bold tracking-widest uppercase text-sm">आमची वैशिष्ट्ये | KEY FEATURES</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBlack mt-2">Why Apurva's Classes Stands Out in Ratnagiri</h2>
+                <div class="w-24 h-1 bg-brandMaroon mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                
+                <!-- Feature 1 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandMaroon/10 rounded-xl flex items-center justify-center text-brandMaroon text-lg mb-4">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Experienced Teachers</h4>
+                    <p class="text-gray-500 text-xs">सखोल आणि प्रदीर्घ अध्यापन अनुभव असलेले तज्ज्ञ शिक्षक वर्ग मार्गदर्शन करतात.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandOrange/10 rounded-xl flex items-center justify-center text-brandOrange text-lg mb-4">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Small Batch Size</h4>
+                    <p class="text-gray-500 text-xs">प्रत्येक विद्यार्थ्यावर योग्य लक्ष देता यावे म्हणून मर्यादित विद्यार्थी संख्या.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandMaroon/10 rounded-xl flex items-center justify-center text-brandMaroon text-lg mb-4">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Weekly Tests</h4>
+                    <p class="text-gray-500 text-xs">प्रत्येक धड्यावर साप्ताहिक सराव परीक्षा घेऊन आकलन तपासले जाते.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandOrange/10 rounded-xl flex items-center justify-center text-brandOrange text-lg mb-4">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Monthly Progress Report</h4>
+                    <p class="text-gray-500 text-xs">विद्यार्थ्यांच्या शैक्षणिक प्रगतीचा अहवाल दरमहा पालकांपर्यंत पोहोचवला जातो.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandMaroon/10 rounded-xl flex items-center justify-center text-brandMaroon text-lg mb-4">
+                        <i class="fa-solid fa-street-view"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Personal Attention</h4>
+                    <p class="text-gray-500 text-xs">विद्यार्थ्याची कमजोरी ओळखून त्याला स्वतंत्र मार्गदर्शन केले जाते.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandOrange/10 rounded-xl flex items-center justify-center text-brandOrange text-lg mb-4">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Doubt Solving Sessions</h4>
+                    <p class="text-gray-500 text-xs">दर आठवड्याला सर्व कठीण संकल्पना सोडवण्यासाठी स्वतंत्र शंका निरसन सत्र.</p>
+                </div>
+
+                <!-- Feature 7 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandMaroon/10 rounded-xl flex items-center justify-center text-brandMaroon text-lg mb-4">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Digital Notes (PDF)</h4>
+                    <p class="text-gray-500 text-xs">मोबाईलवर वाचण्यासाठी सुटसुटीत व सोप्या भाषेतील डिजिटल पीडीएफ नोट्स.</p>
+                </div>
+
+                <!-- Feature 8 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandOrange/10 rounded-xl flex items-center justify-center text-brandOrange text-lg mb-4">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Printed Notes</h4>
+                    <p class="text-gray-500 text-xs">वर्गामध्ये सराव करण्यासाठी छापील महत्त्वाची स्टडी मटेरियल दिली जातात.</p>
+                </div>
+
+                <!-- Feature 9 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandMaroon/10 rounded-xl flex items-center justify-center text-brandMaroon text-lg mb-4">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Smart Classroom</h4>
+                    <p class="text-gray-500 text-xs">कठिण शास्त्रीय संकल्पना समजण्यासाठी डिजिटल प्रक्षेपणाचा वापर.</p>
+                </div>
+
+                <!-- Feature 10 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandOrange/10 rounded-xl flex items-center justify-center text-brandOrange text-lg mb-4">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Daily Homework</h4>
+                    <p class="text-gray-500 text-xs">घरी नियमित अभ्यासाची सवय राहण्यासाठी रोज पद्धतशीर गृहपाठ तपासणी.</p>
+                </div>
+
+                <!-- Feature 11 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandMaroon/10 rounded-xl flex items-center justify-center text-brandMaroon text-lg mb-4">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Parent Meetings</h4>
+                    <p class="text-gray-500 text-xs">दर तिमाहीला पालकांशी प्रत्यक्ष संवाद साधून प्रगतीवर सखोल चर्चा.</p>
+                </div>
+
+                <!-- Feature 12 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandOrange/10 rounded-xl flex items-center justify-center text-brandOrange text-lg mb-4">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Exam Strategy Sessions</h4>
+                    <p class="text-gray-500 text-xs">बोर्ड परीक्षेत जास्त गुण कसे मिळवावेत यासाठी खास उत्तरपत्रिका लेखन सराव.</p>
+                </div>
+
+                <!-- Feature 13 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandMaroon/10 rounded-xl flex items-center justify-center text-brandMaroon text-lg mb-4">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Time Management Guidance</h4>
+                    <p class="text-gray-500 text-xs">वेळेच्या नियोजनाचे कसब शिकवणारी विशेष कार्यशाळा सत्रे.</p>
+                </div>
+
+                <!-- Feature 14 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-2xl shadow-sm hover:shadow-md active:bg-slate-50 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-10 h-10 bg-brandOrange/10 rounded-xl flex items-center justify-center text-brandOrange text-lg mb-4">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h4 class="text-sm font-extrabold text-brandBlack mb-1 tracking-tight">Career Guidance</h4>
+                    <p class="text-gray-500 text-xs">१० वी नंतर काय करावे यासाठी योग्य करिअर कौन्सिलिंग आणि मार्गदर्शन.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: RESULTS -->
+    <section id="results" class="py-20 bg-brandGray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandOrange font-bold tracking-widest uppercase text-sm">आमचे यश | OUR TOPPERS & RESULTS</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBlack mt-2">Celebrating Academic Excellence Year Over Year</h2>
+                <div class="w-24 h-1 bg-brandMaroon mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Topper Cards Grid -->
+            <h3 class="text-xl font-bold text-brandMaroon mb-8 text-center uppercase tracking-wide">🏆 Board Examination Toppers</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Topper Card 1 Placeholder -->
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center flex flex-col justify-between">
+                    <div>
+                        <!-- PLACEHOLDER_START: TOPPER_PHOTO_1 -->
+                        <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-brandOrange overflow-hidden">
+                            <i class="fa-solid fa-user-graduate text-brandOrange text-2xl"></i>
+                        </div>
+                        <!-- PLACEHOLDER_END: TOPPER_PHOTO_1 -->
+                        <h4 class="font-bold text-brandBlack text-lg">Student Name (Topper)</h4>
+                        <p class="text-brandMaroon font-black text-xl mt-1">98.20% (SSC Board)</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-500 font-semibold uppercase">
+                        Sanskrit: 99/100 | Science: 98/100
+                    </div>
+                </div>
+
+                <!-- Topper Card 2 Placeholder -->
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center flex flex-col justify-between">
+                    <div>
+                        <!-- PLACEHOLDER_START: TOPPER_PHOTO_2 -->
+                        <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-brandOrange overflow-hidden">
+                            <i class="fa-solid fa-user-graduate text-brandOrange text-2xl"></i>
+                        </div>
+                        <!-- PLACEHOLDER_END: TOPPER_PHOTO_2 -->
+                        <h4 class="font-bold text-brandBlack text-lg">Student Name (Topper)</h4>
+                        <p class="text-brandMaroon font-black text-xl mt-1">96.40% (SSC Board)</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-500 font-semibold uppercase">
+                        Maths: 100/100 | Sanskrit: 98/100
+                    </div>
+                </div>
+
+                <!-- Topper Card 3 Placeholder -->
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center flex flex-col justify-between">
+                    <div>
+                        <!-- PLACEHOLDER_START: TOPPER_PHOTO_3 -->
+                        <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-brandOrange overflow-hidden">
+                            <i class="fa-solid fa-user-graduate text-brandOrange text-2xl"></i>
+                        </div>
+                        <!-- PLACEHOLDER_END: TOPPER_PHOTO_3 -->
+                        <h4 class="font-bold text-brandBlack text-lg">Student Name (Topper)</h4>
+                        <p class="text-brandMaroon font-black text-xl mt-1">95.80% (SSC Board)</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-500 font-semibold uppercase">
+                        Science: 97/100 | Maths: 95/100
+                    </div>
+                </div>
+
+                <!-- Topper Card 4 Placeholder -->
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center flex flex-col justify-between">
+                    <div>
+                        <!-- PLACEHOLDER_START: TOPPER_PHOTO_4 -->
+                        <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-brandOrange overflow-hidden">
+                            <i class="fa-solid fa-user-graduate text-brandOrange text-2xl"></i>
+                        </div>
+                        <!-- PLACEHOLDER_END: TOPPER_PHOTO_4 -->
+                        <h4 class="font-bold text-brandBlack text-lg">Student Name (Topper)</h4>
+                        <p class="text-brandMaroon font-black text-xl mt-1">94.60% (SSC Board)</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-500 font-semibold uppercase">
+                        Sanskrit: 100/100
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Previous Year Result Highlight & Statistics -->
+            <div class="mt-16 bg-white rounded-2xl shadow-md p-8 border border-gray-100">
+                <h3 class="text-xl font-bold text-brandBlack mb-6 text-center">Previous Year SSC Board Statistics (मागील वर्षाचा निकाल)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl lg:text-5xl font-black text-brandOrange">100%</div>
+                        <p class="text-sm font-semibold text-gray-600 mt-2 uppercase">एकूण निकाल (Total Passing Result)</p>
+                    </div>
+                    <div class="border-y md:border-y-0 md:border-x border-gray-100 py-6 md:py-0">
+                        <div class="text-4xl lg:text-5xl font-black text-brandMaroon">35+</div>
+                        <p class="text-sm font-semibold text-gray-600 mt-2 uppercase">९०% पेक्षा जास्त गुण मिळवलेले विद्यार्थी</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl lg:text-5xl font-black text-brandBlack">100/100</div>
+                        <p class="text-sm font-semibold text-gray-600 mt-2 uppercase">संस्कृत व गणितात पैकीच्या पैकी गुण</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Stories Carousel Placeholder Indicator -->
+            <div class="mt-8 text-center text-xs text-gray-500">
+                <!-- PLACEHOLDER_START: SUCCESS_STORIES_GALLERY -->
+                <p class="italic"><i class="fa-solid fa-circle-info mr-1 text-brandOrange"></i> यशाची परंपरा दाखवणारे इतर गुणवंत विद्यार्थ्यांचे फोटो व गुणपत्रक गॅलरी लवकरच अपडेट केली जाईल.</p>
+                <!-- PLACEHOLDER_END: SUCCESS_STORIES_GALLERY -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: TESTIMONIALS -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandOrange font-bold tracking-widest uppercase text-sm">पालक व विद्यार्थ्यांचे अनुभव | REVIEWS</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBlack mt-2">What Proud Parents & Happy Students Say</h2>
+                <div class="w-24 h-1 bg-brandMaroon mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Student Review Card 1 (Marathi Placeholder) -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 relative shadow-sm shadow-brandMaroon/5 hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 active:bg-slate-50">
+                    <span class="absolute top-4 right-6 text-6xl text-brandOrange opacity-20 font-serif leading-none">“</span>
+                    <h4 class="font-extrabold text-brandMaroon mb-1 text-base tracking-tight">अथर्व जोशी <span class="text-xs text-slate-500 font-normal ml-2">इयत्ता १० वी विद्यार्थी</span></h4>
+                    <div class="flex text-amber-400 text-xs mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <!-- PLACEHOLDER_START: TESTIMONIAL_STUDENT_1 -->
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed italic">
+                        "अपूर्व सरांची शिकवण्याची पद्धत अतिशय सोपी आहे. विशेषतः विज्ञानातील अवघड प्रयोग आणि गणिताची कठीण सूत्रे सहज समजली. क्लासच्या साप्ताहिक परीक्षांमुळे माझा बोर्ड परीक्षेचा आत्मविश्वास वाढला."
+                    </p>
+                    <!-- PLACEHOLDER_END: TESTIMONIAL_STUDENT_1 -->
+                </div>
+
+                <!-- Parent Review Card 2 (Marathi Placeholder) -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 relative shadow-sm shadow-brandMaroon/5 hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 active:bg-slate-50">
+                    <span class="absolute top-4 right-6 text-6xl text-brandOrange opacity-20 font-serif leading-none">“</span>
+                    <h4 class="font-extrabold text-brandMaroon mb-1 text-base tracking-tight">सौ. स्मिता कुलकर्णी <span class="text-xs text-slate-500 font-normal ml-2">पालक</span></h4>
+                    <div class="flex text-amber-400 text-xs mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <!-- PLACEHOLDER_START: TESTIMONIAL_PARENT_1 -->
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed italic">
+                        "माझ्या मुलाला संस्कृत विषयाची खूप भीती वाटत होती, परंतु अपूर्व क्लासेसमध्ये लावल्यानंतर त्याच्या गुणांमध्ये लक्षणीय सुधारणा झाली. प्रत्येक पालकाच्या तक्रारीवर शिक्षक जातीने लक्ष देतात. पालकांच्या नियमित बैठका घेतल्या जातात हे मला खूप आवडले."
+                    </p>
+                    <!-- PLACEHOLDER_END: TESTIMONIAL_PARENT_1 -->
+                </div>
+
+                <!-- Student Review Card 3 (Marathi Placeholder) -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 relative shadow-sm shadow-brandMaroon/5 hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 active:bg-slate-50">
+                    <span class="absolute top-4 right-6 text-6xl text-brandOrange opacity-20 font-serif leading-none">“</span>
+                    <h4 class="font-extrabold text-brandMaroon mb-1 text-base tracking-tight">संकेत सावंत <span class="text-xs text-slate-500 font-normal ml-2">माजी विद्यार्थी, पटवर्धन हायस्कूल</span></h4>
+                    <div class="flex text-amber-400 text-xs mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <!-- PLACEHOLDER_START: TESTIMONIAL_STUDENT_2 -->
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed italic">
+                        "पटवर्धन हायस्कूलच्या शाळा सुटल्यानंतरच्या वेळात आम्हाला विशेष बॅच मिळाली. यामुळे आमची खूप मोठी सोय झाली. वैयक्तिक शंका विचारण्याची पूर्ण मुभा सरांनी दिली होती, ज्यामुळे माझे संस्कृतमध्ये ९६ गुण आले."
+                    </p>
+                    <!-- PLACEHOLDER_END: TESTIMONIAL_STUDENT_2 -->
+                </div>
+
+            </div>
+
+            <!-- Google Reviews Highlight Slot -->
+            <div class="mt-16 bg-brandGray rounded-2xl p-8 border border-gray-100 max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="space-y-2 text-center md:text-left">
+                    <h3 class="text-lg font-bold text-brandBlack">We are Highly Rated on Google!</h3>
+                    <p class="text-sm text-gray-600">आमचे हजारो समाधानी पालक आणि विद्यार्थी Google वर उत्कृष्ट रिव्ह्यू देत आहेत.</p>
+                    <div class="flex items-center justify-center md:justify-start space-x-2">
+                        <span class="text-2xl font-black text-brandOrange">4.9/5</span>
+                        <div class="flex text-amber-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                        <span class="text-xs text-gray-500">(150+ reviews)</span>
+                    </div>
+                </div>
+                <!-- PLACEHOLDER_START: GOOGLE_REVIEWS_SCREENSHOT -->
+                <div class="bg-white border border-gray-200 rounded-xl p-4 shadow-sm w-full md:w-80 text-center text-xs text-gray-500 font-mono">
+                    <i class="fa-brands fa-google text-brandOrange text-3xl mb-2"></i>
+                    <p class="font-bold text-gray-700">Google Reviews Screenshot Placeholder</p>
+                    <p class="text-[10px] mt-1">Insert authentic Google Business review snippet image here</p>
+                    <span class="mt-2 block text-[9px] bg-gray-100 text-gray-600 p-1 rounded">google_snippet_reviews.png</span>
+                </div>
+                <!-- PLACEHOLDER_END: GOOGLE_REVIEWS_SCREENSHOT -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: GALLERY -->
+    <section id="gallery" class="py-20 bg-brandGray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandOrange font-bold tracking-widest uppercase text-sm">फोटो गॅलरी | VISUAL GALLERY</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBlack mt-2">Glimpses of Our Class Environment & Events</h2>
+                <div class="w-24 h-1 bg-brandMaroon mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Gallery Image Grid Structure -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Gallery Item 1 -->
+                <div class="relative bg-zinc-800 rounded-2xl overflow-hidden aspect-video shadow-md border border-gray-200 group cursor-pointer" onclick="openLightbox('Classroom Study Sessions', 'ic_gallery_classroom.jpg')">
+                    <!-- PLACEHOLDER_START: GALLERY_IMAGE_CLASSROOM -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-zinc-900 text-gray-400">
+                        <i class="fa-solid fa-school text-brandOrange text-4xl mb-2"></i>
+                        <h4 class="font-bold text-white text-sm">Classroom Infrastructure</h4>
+                        <p class="text-[10px] mt-1">Spacious, well-lit smart student desks</p>
+                    </div>
+                    <!-- PLACEHOLDER_END: GALLERY_IMAGE_CLASSROOM -->
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                        <span class="text-white opacity-0 group-hover:opacity-100 transition duration-300 bg-brandMaroon text-xs px-3 py-1.5 rounded-full"><i class="fa-solid fa-expand mr-1"></i> View Image</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="relative bg-zinc-800 rounded-2xl overflow-hidden aspect-video shadow-md border border-gray-200 group cursor-pointer" onclick="openLightbox('Educational Seminars & Guest Lectures', 'ic_gallery_seminar.jpg')">
+                    <!-- PLACEHOLDER_START: GALLERY_IMAGE_SEMINAR -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-zinc-900 text-gray-400">
+                        <i class="fa-solid fa-microphone-lines text-brandOrange text-4xl mb-2"></i>
+                        <h4 class="font-bold text-white text-sm">Seminars & Guest Lectures</h4>
+                        <p class="text-[10px] mt-1">Special strategy and exam anxiety relief sessions</p>
+                    </div>
+                    <!-- PLACEHOLDER_END: GALLERY_IMAGE_SEMINAR -->
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                        <span class="text-white opacity-0 group-hover:opacity-100 transition duration-300 bg-brandMaroon text-xs px-3 py-1.5 rounded-full"><i class="fa-solid fa-expand mr-1"></i> View Image</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="relative bg-zinc-800 rounded-2xl overflow-hidden aspect-video shadow-md border border-gray-200 group cursor-pointer" onclick="openLightbox('Annual Prize Distribution Function', 'ic_gallery_prize.jpg')">
+                    <!-- PLACEHOLDER_START: GALLERY_IMAGE_PRIZE -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-zinc-900 text-gray-400">
+                        <i class="fa-solid fa-award text-brandOrange text-4xl mb-2"></i>
+                        <h4 class="font-bold text-white text-sm">Annual Prize Distribution</h4>
+                        <p class="text-[10px] mt-1">Felicitation of top scorers and board exam rankers</p>
+                    </div>
+                    <!-- PLACEHOLDER_END: GALLERY_IMAGE_PRIZE -->
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                        <span class="text-white opacity-0 group-hover:opacity-100 transition duration-300 bg-brandMaroon text-xs px-3 py-1.5 rounded-full"><i class="fa-solid fa-expand mr-1"></i> View Image</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="relative bg-zinc-800 rounded-2xl overflow-hidden aspect-video shadow-md border border-gray-200 group cursor-pointer" onclick="openLightbox('Doubt Solving Interactive Sessions', 'ic_gallery_doubt.jpg')">
+                    <!-- PLACEHOLDER_START: GALLERY_IMAGE_DOUBT -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-zinc-900 text-gray-400">
+                        <i class="fa-solid fa-comments text-brandOrange text-4xl mb-2"></i>
+                        <h4 class="font-bold text-white text-sm">Doubt Solving Classes</h4>
+                        <p class="text-[10px] mt-1">One-on-one custom guidance during homework help</p>
+                    </div>
+                    <!-- PLACEHOLDER_END: GALLERY_IMAGE_DOUBT -->
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                        <span class="text-white opacity-0 group-hover:opacity-100 transition duration-300 bg-brandMaroon text-xs px-3 py-1.5 rounded-full"><i class="fa-solid fa-expand mr-1"></i> View Image</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="relative bg-zinc-800 rounded-2xl overflow-hidden aspect-video shadow-md border border-gray-200 group cursor-pointer" onclick="openLightbox('Student Sports & Annual Get-Together Events', 'ic_gallery_gathering.jpg')">
+                    <!-- PLACEHOLDER_START: GALLERY_IMAGE_GATHERING -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-zinc-900 text-gray-400">
+                        <i class="fa-solid fa-face-smile text-brandOrange text-4xl mb-2"></i>
+                        <h4 class="font-bold text-white text-sm">Annual Gathering Events</h4>
+                        <p class="text-[10px] mt-1">Fun activities and educational sports games</p>
+                    </div>
+                    <!-- PLACEHOLDER_END: GALLERY_IMAGE_GATHERING -->
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                        <span class="text-white opacity-0 group-hover:opacity-100 transition duration-300 bg-brandMaroon text-xs px-3 py-1.5 rounded-full"><i class="fa-solid fa-expand mr-1"></i> View Image</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="relative bg-zinc-800 rounded-2xl overflow-hidden aspect-video shadow-md border border-gray-200 group cursor-pointer" onclick="openLightbox('Science & Maths Practical Models Exhibition', 'ic_gallery_exhibition.jpg')">
+                    <!-- PLACEHOLDER_START: GALLERY_IMAGE_EXHIBITION -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-zinc-900 text-gray-400">
+                        <i class="fa-solid fa-vial-virus text-brandOrange text-4xl mb-2"></i>
+                        <h4 class="font-bold text-white text-sm">Exhibition & Projects</h4>
+                        <p class="text-[10px] mt-1">Students showcasing science and maths model representations</p>
+                    </div>
+                    <!-- PLACEHOLDER_END: GALLERY_IMAGE_EXHIBITION -->
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                        <span class="text-white opacity-0 group-hover:opacity-100 transition duration-300 bg-brandMaroon text-xs px-3 py-1.5 rounded-full"><i class="fa-solid fa-expand mr-1"></i> View Image</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX FOR GALLERY (JAVASCRIPT POWERED) -->
+    <div id="lightbox" class="hidden fixed inset-0 z-50 bg-black bg-opacity-95 flex flex-col items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl focus:outline-none hover:text-brandOrange"><i class="fa-solid fa-xmark"></i></button>
+        <div class="max-w-4xl w-full text-center">
+            <div id="lightbox-image-placeholder" class="bg-zinc-800 border border-gray-600 rounded-xl aspect-video w-full flex flex-col items-center justify-center text-gray-400 p-8">
+                <i class="fa-regular fa-image text-brandOrange text-6xl mb-4"></i>
+                <h3 id="lightbox-title" class="text-white text-2xl font-bold">Classroom Photo</h3>
+                <p id="lightbox-file" class="text-sm font-mono mt-2 bg-zinc-900 px-3 py-1 rounded">file_path.jpg</p>
+                <p class="text-xs text-gray-500 mt-4 max-w-sm">This is an overlay lightbox. When real image assets are deployed in /drawable, they will open inside this container beautifully.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 8: TIMETABLE -->
+    <section id="timetable" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandOrange font-bold tracking-widest uppercase text-sm">वेळापत्रक | BATCH TIMINGS</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBlack mt-2">Structured Timings Fitting School Schedules</h2>
+                <div class="w-24 h-1 bg-brandMaroon mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Timetable 1: Batch Timings -->
+                <div class="bg-brandGray rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-brandMaroon mb-4 flex items-center"><i class="fa-solid fa-clock mr-2 text-brandOrange"></i> Batch Timings (बॅचच्या वेळा)</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-sm text-gray-700">
+                            <thead>
+                                <tr class="bg-brandMaroon text-white">
+                                    <th class="p-3 rounded-l-lg">Batch Name</th>
+                                    <th class="p-3">Class</th>
+                                    <th class="p-3 rounded-r-lg">Timings</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-100">
+                                    <td class="p-3 font-semibold text-brandBlack">Morning Batch (A)</td>
+                                    <td class="p-3">इयत्ता १० वी (SSC)</td>
+                                    <td class="p-3 text-brandOrange font-bold">07:00 AM - 09:30 AM</td>
+                                </tr>
+                                <tr class="hover:bg-gray-100">
+                                    <td class="p-3 font-semibold text-brandBlack">Afternoon School-Special</td>
+                                    <td class="p-3">पटवर्धन हायस्कूल स्पेशल</td>
+                                    <td class="p-3 text-brandOrange font-bold">01:30 PM - 03:30 PM</td>
+                                </tr>
+                                <tr class="hover:bg-gray-100">
+                                    <td class="p-3 font-semibold text-brandBlack">Evening Batch (B)</td>
+                                    <td class="p-3">इयत्ता १० वी (SSC)</td>
+                                    <td class="p-3 text-brandOrange font-bold">04:30 PM - 07:00 PM</td>
+                                </tr>
+                                <tr class="hover:bg-gray-100">
+                                    <td class="p-3 font-semibold text-brandBlack">Class 9th Batch</td>
+                                    <td class="p-3">इयत्ता ९ वी</td>
+                                    <td class="p-3 text-brandOrange font-bold">05:00 PM - 07:00 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Timetable 2: Subject Wise Weekly Schedule -->
+                <div class="bg-brandGray rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-brandMaroon mb-4 flex items-center"><i class="fa-solid fa-calendar-week mr-2 text-brandOrange"></i> Weekly Subject Schedule (साप्ताहिक वेळापत्रक)</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-sm text-gray-700">
+                            <thead>
+                                <tr class="bg-brandBlack text-white">
+                                    <th class="p-3 rounded-l-lg">Days</th>
+                                    <th class="p-3">Subject 1 (विषय १)</th>
+                                    <th class="p-3 rounded-r-lg">Subject 2 (विषय २)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-100">
+                                    <td class="p-3 font-semibold text-brandBlack">सोमवार ते बुधवार</td>
+                                    <td class="p-3 text-gray-700">Mathematics (भूमिती / बीजगणित)</td>
+                                    <td class="p-3 text-brandMaroon font-bold">Science & Tech</td>
+                                </tr>
+                                <tr class="hover:bg-gray-100">
+                                    <td class="p-3 font-semibold text-brandBlack">गुरुवार ते शुक्रवार</td>
+                                    <td class="p-3 text-gray-700">Sanskrit (संस्कृत संपूर्ण/अर्ध)</td>
+                                    <td class="p-3 text-brandMaroon font-bold">Mathematics Practice</td>
+                                </tr>
+                                <tr class="hover:bg-gray-100">
+                                    <td class="p-3 font-semibold text-brandBlack">शनिवार</td>
+                                    <td class="p-3 text-gray-700">Doubt Solving Session</td>
+                                    <td class="p-3 text-brandOrange font-bold">Exam Preparation</td>
+                                </tr>
+                                <tr class="hover:bg-gray-100">
+                                    <td class="p-3 font-semibold text-brandBlack bg-orange-50">रविवार</td>
+                                    <td class="p-3 bg-orange-50 font-bold text-brandOrange" colspan="2">साप्ताहिक परीक्षा (Weekly Assessment Test Series)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: FEES -->
+    <section id="fees" class="py-20 bg-brandGray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandOrange font-bold tracking-widest uppercase text-sm">फीस आणि सवलती | INVESTMENT & SCHOLARSHIP</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBlack mt-2">Affordable High-Quality Coaching Fees</h2>
+                <div class="w-24 h-1 bg-brandMaroon mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Fees Table Placeholder -->
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-brandBlack mb-6 text-center uppercase tracking-wider">Fee Structure & Installments</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm text-gray-700 mb-8">
+                        <thead>
+                            <tr class="bg-brandMaroon text-white">
+                                <th class="p-3 rounded-l-lg">Course / Batch</th>
+                                <th class="p-3">Subjects Included</th>
+                                <th class="p-3 rounded-r-lg text-right">Fee (Placeholder)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <!-- PLACEHOLDER_START: FEES_TABLE_ROWS -->
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-3 font-semibold text-brandBlack">SSC Class 10th (Yearly)</td>
+                                <td class="p-3">Science, Mathematics & Sanskrit</td>
+                                <td class="p-3 text-right text-brandOrange font-bold">₹ [CONTACT FOR FEES]</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-3 font-semibold text-brandBlack">SSC Class 9th (Yearly)</td>
+                                <td class="p-3">Science, Mathematics & Sanskrit</td>
+                                <td class="p-3 text-right text-brandOrange font-bold">₹ [CONTACT FOR FEES]</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-3 font-semibold text-brandBlack">Patwardhan High School Special</td>
+                                <td class="p-3">Selected Subject Batches</td>
+                                <td class="p-3 text-right text-brandOrange font-bold">₹ [CONTACT FOR FEES]</td>
+                            </tr>
+                            <!-- PLACEHOLDER_END: FEES_TABLE_ROWS -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Installment and Scholarship Notes -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6 border-t border-gray-100">
+                    <div class="space-y-2">
+                        <h4 class="font-bold text-brandMaroon flex items-center"><i class="fa-solid fa-credit-card mr-2"></i> हप्त्यांची सोय (Installment Available)</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            आर्थिक अडचण असणाऱ्या पालकांसाठी फी सुलभ ३ ते ४ हप्त्यांमध्ये भरण्याची सोय उपलब्ध आहे. गुणवंत गरीब विद्यार्थ्यांना सवलत दिली जाईल.
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="font-bold text-brandOrange flex items-center"><i class="fa-solid fa-medal mr-2"></i> स्कॉलरशिप माहिती (Scholarship Information)</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            मागील वर्षात ९ वी मध्ये ९०% पेक्षा जास्त गुण मिळालेल्या विद्यार्थ्यांना प्रवेश फी मध्ये विशेष सवलत (Special Merit Discount) दिली जाईल.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: FAQs -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <span class="text-brandOrange font-bold tracking-widest uppercase text-sm">नेहमी विचारले जाणारे प्रश्न | FAQS</span>
+                <h2 class="text-3xl font-extrabold text-brandBlack mt-2">Frequently Asked Questions</h2>
+                <div class="w-24 h-1 bg-brandMaroon mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Accordion Structure -->
+            <div class="space-y-4">
+                
+                <!-- FAQ item 1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 text-left transition" onclick="toggleFaq(this)">
+                        <span class="font-bold text-brandBlack text-base sm:text-lg">प्रवेश प्रक्रिया (Admission Process) कशी आहे?</span>
+                        <i class="fa-solid fa-chevron-down text-brandMaroon transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-5 bg-white border-t border-gray-200 text-sm text-gray-600 leading-relaxed">
+                        प्रवेश घेण्यासाठी तुम्ही आमच्या सोनल अपार्टमेंट, गदिटाळी येथील ऑफिसला भेट देऊ शकता किंवा <a href="tel:9067257872" class="text-brandOrange font-bold">9067257872</a> या नंबरवर कॉल करून नाव नोंदवू शकता. प्रवेश फॉर्म आणि सोबत मागील इयत्तेचे प्रगतीपुस्तक (Report Card) आणणे आवश्यक आहे.
+                    </div>
+                </div>
+
+                <!-- FAQ item 2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 text-left transition" onclick="toggleFaq(this)">
+                        <span class="font-bold text-brandBlack text-base sm:text-lg">क्लासची फीस हप्त्याने भरता येते का? (Installment Plan)</span>
+                        <i class="fa-solid fa-chevron-down text-brandMaroon transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-5 bg-white border-t border-gray-200 text-sm text-gray-600 leading-relaxed">
+                        होय! पालकांच्या सोयीसाठी आम्ही सोयीस्कर ३ ते ४ हप्त्यांची व्यवस्था उपलब्ध केली आहे. प्रवेशाच्या वेळी पहिली रक्कम भरून उर्वरित रक्कम ठरवून दिलेल्या कालावधीत भरायची असते.
+                    </div>
+                </div>
+
+                <!-- FAQ item 3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 text-left transition" onclick="toggleFaq(this)">
+                        <span class="font-bold text-brandBlack text-base sm:text-lg">बॅचची वेळ (Batch Timings) काय आहेत?</span>
+                        <i class="fa-solid fa-chevron-down text-brandMaroon transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-5 bg-white border-t border-gray-200 text-sm text-gray-600 leading-relaxed">
+                        आमच्याकडे सकाळच्या आणि संध्याकाळच्या अशा दोन बॅचेस आहेत. शाळेच्या वेळेनुसार विद्यार्थी योग्य ती बॅच निवडू शकतात. पटवर्धन हायस्कूलच्या विद्यार्थ्यांसाठी त्यांच्या वेळेनुसार स्वतंत्र दुपारची विशेष बॅच आहे.
+                    </div>
+                </div>
+
+                <!-- FAQ item 4 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 text-left transition" onclick="toggleFaq(this)">
+                        <span class="font-bold text-brandBlack text-base sm:text-lg">अभ्यासाचे साहित्य आणि नोट्स मिळतात का? (Study Notes)</span>
+                        <i class="fa-solid fa-chevron-down text-brandMaroon transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-5 bg-white border-t border-gray-200 text-sm text-gray-600 leading-relaxed">
+                        होय, अपूर्व क्लासेसतर्फे विद्यार्थ्यांना महत्त्वाच्या नोट्स छापील (Printed Copy) तसेच डिजिटल पीडीएफ (Digital PDF Notes) स्वरूपात दिल्या जातात. यामध्ये सर्व महत्त्वाचे प्रश्न, उत्तरांचे नमुने आणि बोर्ड परीक्षेचे नियोजन दिलेले असते.
+                    </div>
+                </div>
+
+                <!-- FAQ item 5 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 text-left transition" onclick="toggleFaq(this)">
+                        <span class="font-bold text-brandBlack text-base sm:text-lg">डेमो लेक्चर उपलब्ध आहे का? (Demo Lecture available?)</span>
+                        <i class="fa-solid fa-chevron-down text-brandMaroon transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-5 bg-white border-t border-gray-200 text-sm text-gray-600 leading-relaxed">
+                        होय! नवीन विद्यार्थ्यांसाठी ३ दिवसांचे मोफत डेमो लेक्चर (Free Demo Lectures) उपलब्ध आहे, जेणेकरून विद्यार्थ्यांना शिकवण्याची पद्धत प्रत्यक्ष अनुभवता येईल.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 11: CONTACT -->
+    <section id="contact" class="py-20 bg-brandGray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandOrange font-bold tracking-widest uppercase text-sm">आमच्याशी संपर्क साधा | CONTACT US</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBlack mt-2">Get in Touch with Apurva's Classes</h2>
+                <div class="w-24 h-1 bg-brandMaroon mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Left: Contact Details and Form Placeholder -->
+                <div class="space-y-8">
+                    <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-brandMaroon/5 space-y-4">
+                        <h3 class="text-xl font-extrabold text-brandMaroon tracking-tight">Contact Information</h3>
+                        <p class="text-gray-500 text-sm">Feel free to contact us via Call, WhatsApp, or visit our classroom directly during working hours.</p>
+                        
+                        <!-- Details -->
+                        <div class="space-y-4 pt-2">
+                            <!-- Address -->
+                            <div class="flex items-start">
+                                <span class="text-brandOrange text-lg mt-1 mr-3"><i class="fa-solid fa-location-dot"></i></span>
+                                <div>
+                                    <h4 class="font-extrabold text-brandBlack text-sm tracking-tight">Address</h4>
+                                    <p class="text-gray-500 text-xs mt-0.5 leading-normal">
+                                        Sonal Apartment, opposite Fatak High School, Gaditali, Ratnagiri, Maharashtra
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="flex items-start">
+                                <span class="text-brandOrange text-lg mt-1 mr-3"><i class="fa-solid fa-phone"></i></span>
+                                <div>
+                                    <h4 class="font-extrabold text-brandBlack text-sm tracking-tight">Call/Phone Support</h4>
+                                    <p class="text-gray-500 text-xs mt-0.5"><a href="tel:9067257872" class="hover:text-brandOrange font-semibold">9067257872</a> | <a href="tel:8329931123" class="hover:text-brandOrange font-semibold">8329931123</a></p>
+                                </div>
+                            </div>
+
+                            <!-- WhatsApp -->
+                            <div class="flex items-start">
+                                <span class="text-brandOrange text-lg mt-1 mr-3"><i class="fa-brands fa-whatsapp text-emerald-600"></i></span>
+                                <div>
+                                    <h4 class="font-extrabold text-brandBlack text-sm tracking-tight">WhatsApp</h4>
+                                    <p class="text-gray-500 text-xs mt-0.5"><a href="https://wa.me/8329931123" target="_blank" class="hover:text-brandOrange font-semibold">8329931123</a> (Direct Support)</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-start">
+                                <span class="text-brandOrange text-lg mt-1 mr-3"><i class="fa-solid fa-envelope"></i></span>
+                                <div>
+                                    <h4 class="font-extrabold text-brandBlack text-sm tracking-tight">Email Address (Placeholder)</h4>
+                                    <p class="text-gray-500 text-xs mt-0.5">info.apurvaclasses@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <!-- Working Hours -->
+                            <div class="flex items-start">
+                                <span class="text-brandOrange text-lg mt-1 mr-3"><i class="fa-solid fa-clock"></i></span>
+                                <div>
+                                    <h4 class="font-extrabold text-brandBlack text-sm tracking-tight">Working Hours</h4>
+                                    <p class="text-gray-500 text-xs mt-0.5">Monday to Saturday: 07:00 AM - 08:30 PM | Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Button Group for Easy Mobile Tap -->
+                    <div class="flex gap-4">
+                        <a href="tel:9067257872" class="flex-1 bg-brandMaroon text-white text-center py-3.5 rounded-2xl font-bold hover:bg-red-950 active:scale-95 transition-all duration-200 shadow-md shadow-brandMaroon/20 flex items-center justify-center">
+                            <i class="fa-solid fa-phone mr-2"></i> Call Support
+                        </a>
+                        <a href="https://wa.me/8329931123" target="_blank" class="flex-1 bg-emerald-600 text-white text-center py-3.5 rounded-2xl font-bold hover:bg-emerald-700 active:scale-95 transition-all duration-200 shadow-md shadow-emerald-600/20 flex items-center justify-center">
+                            <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp chat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Google Map Embed Placeholder & Map info -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-brandMaroon/5 flex flex-col justify-between">
+                    <h3 class="text-xl font-extrabold text-brandBlack mb-4 tracking-tight">Location Map (रत्नागिरी मधील पत्ता)</h3>
+                    <!-- Google Maps Embed Placeholder -->
+                    <!-- PLACEHOLDER_START: GOOGLE_MAPS_EMBED -->
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-100 aspect-video mb-4 shadow-md shadow-brandMaroon/5">
+                        <!-- Embed Iframe with standard query pointing to Sonal Apartment, Ratnagiri -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.4284567228833!2d73.307374!3d16.993092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be9fc4e11db584d%3A0xc3b8a1c9ee91b92e!2sGaditali%2C%20Ratnagiri%2C%20Maharashtra%20415612!5e0!3m2!1sen!2sin!4v1688981123456!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <!-- PLACEHOLDER_END: GOOGLE_MAPS_EMBED -->
+                    <div class="p-4 bg-orange-50 border-l-4 border-brandOrange rounded-r-xl text-xs text-gray-700">
+                        <p class="font-bold">Landmark Help:</p>
+                        <p class="mt-1">क्लास सोनल अपार्टमेंटमध्ये असून ते गदिटाळी येथील प्रसिद्ध 'फाटक हायस्कूल' च्या अगदी समोर आहे. रत्नागिरी मध्यवर्ती बस स्थानकापासून (ST Stand) अवघ्या २ मिनिटांच्या अंतरावर आहे.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandBlack text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-zinc-800">
+            <!-- Col 1: About the class -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brandMaroon rounded-xl flex items-center justify-center shadow-md shadow-brandMaroon/25">
+                        <span class="text-brandOrange text-xl"><i class="fa-solid fa-pen-nib"></i></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-extrabold tracking-tight text-white leading-none">APURVA'S <span class="text-brandOrange">CLASSES</span></span>
+                        <span class="text-[10px] text-zinc-400 uppercase tracking-widest font-bold mt-0.5">Ratnagiri • SSC Specialist</span>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    रत्नागिरी येथील अग्रगण्य व संस्कारक्षम कोचिंग इन्स्टिट्युट. ९ वी व १० वी सेमी-इंग्रजी व मराठी माध्यमासाठी अव्वल मार्गदर्शन केंद्र.
+                </p>
+                <!-- Social media icons placeholder -->
+                <div class="flex space-x-3 pt-2">
+                    <!-- PLACEHOLDER_START: SOCIAL_MEDIA_LINKS -->
+                    <a href="https://facebook.com/placeholder" target="_blank" class="w-8 h-8 bg-zinc-800 rounded-full flex items-center justify-center hover:bg-brandOrange hover:text-white transition text-sm"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/placeholder" target="_blank" class="w-8 h-8 bg-zinc-800 rounded-full flex items-center justify-center hover:bg-brandOrange hover:text-white transition text-sm"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com/placeholder" target="_blank" class="w-8 h-8 bg-zinc-800 rounded-full flex items-center justify-center hover:bg-brandOrange hover:text-white transition text-sm"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://wa.me/8329931123" target="_blank" class="w-8 h-8 bg-zinc-800 rounded-full flex items-center justify-center hover:bg-emerald-600 hover:text-white transition text-sm"><i class="fa-brands fa-whatsapp"></i></a>
+                    <!-- PLACEHOLDER_END: SOCIAL_MEDIA_LINKS -->
+                </div>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div class="space-y-4">
+                <h4 class="text-white font-bold text-base tracking-wider uppercase border-l-4 border-brandOrange pl-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#home" class="hover:text-brandOrange transition">Home Page</a></li>
+                    <li><a href="#about" class="hover:text-brandOrange transition">About Us</a></li>
+                    <li><a href="#courses" class="hover:text-brandOrange transition">Courses Offered</a></li>
+                    <li><a href="#features" class="hover:text-brandOrange transition">Features</a></li>
+                    <li><a href="#results" class="hover:text-brandOrange transition">Results Toppers</a></li>
+                    <li><a href="#gallery" class="hover:text-brandOrange transition">Photo Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Contact quick Info -->
+            <div class="space-y-4">
+                <h4 class="text-white font-bold text-base tracking-wider uppercase border-l-4 border-brandOrange pl-3">Get in Touch</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li class="flex items-start"><i class="fa-solid fa-location-dot mt-1 mr-2 text-brandOrange text-xs"></i> Sonal Apartment, opp. Fatak High School, Gaditali, Ratnagiri</li>
+                    <li class="flex items-center"><i class="fa-solid fa-phone mr-2 text-brandOrange text-xs"></i> 9067257872 / 8329931123</li>
+                    <li class="flex items-center"><i class="fa-solid fa-envelope mr-2 text-brandOrange text-xs"></i> info.apurvaclasses@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Col 4: legal/disclaimer placeholder -->
+            <div class="space-y-4">
+                <h4 class="text-white font-bold text-base tracking-wider uppercase border-l-4 border-brandOrange pl-3">Policy Info</h4>
+                <!-- PLACEHOLDER_START: LEGAL_LINKS -->
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#privacy" class="hover:text-brandOrange transition">Privacy Policy</a></li>
+                    <li><a href="#terms" class="hover:text-brandOrange transition">Terms of Use</a></li>
+                    <li><a href="#disclaimer" class="hover:text-brandOrange transition">Disclaimer</a></li>
+                </ul>
+                <p class="text-xs text-gray-500 italic mt-2">All rights reserved to Apurva Classes, Ratnagiri. Details are subject to revision without prior notice.</p>
+                <!-- PLACEHOLDER_END: LEGAL_LINKS -->
+            </div>
+        </div>
+
+        <!-- Copyright credits -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+            <p>&copy; 2026 Apurva's Classes. All Rights Reserved.</p>
+            <p>Website by <a href="https://ebookcharm.com" target="_blank" class="hover:text-brandOrange underline font-semibold">ebookcharm Web Services</a></p>
+        </div>
+    </footer>
+
+    <!-- MOBILE NAVIGATION MENU CONTROLLER & ACCORDION JAVASCRIPT -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when links are clicked
+            const links = mobileMenu.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Accordion (FAQ) Toggle Functionality
+        function toggleFaq(button) {
+            const faqContent = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            // Toggle open / close class
+            if (faqContent) {
+                faqContent.classList.toggle('hidden');
+                
+                // Rotate chevron icon
+                if (faqContent.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            }
+        }
+
+        // Photo Gallery Lightbox Functionality
+        function openLightbox(title, filename) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxFile = document.getElementById('lightbox-file');
+            
+            if (lightbox && lightboxTitle && lightboxFile) {
+                lightboxTitle.textContent = title;
+                lightboxFile.textContent = filename;
+                lightbox.classList.remove('hidden');
+            }
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox) {
+                lightbox.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
